@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-  <meta name="description" content="">
+  <title>Работа на дому</title>
+  <meta name="description" content="Высокодоходная система онлайн заработка">
   <link rel="icon" type="image/png" href="./img/favicon.png">
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -43,16 +43,16 @@
                 <h2 class="head__title">Высокодоходная система онлайн заработка </h2><span
                     class="head__description">Уникальный алгоритм <br>позволяющий зарабатывать<br class="only-mob"> <b>35 000 руб.</b> в первый месяц и уже  со второго месяца <br class="only-mob"> <b
                         class="red">60 000 руб. </b></span><span class="head__description">+ Бесплатное обучение</span><a
-                    class="head__link" href="/">Узнать подробнее</a><img class="top_promotion"
+                    class="head__link" href="/" data-toggle="modal" data-target="#modal">Узнать подробнее</a><img class="top_promotion"
                                                                           src="images/free.png" alt=""/>
             </div>
         </div>
     </div>
 </div>
-<div class="vacancy" id="vacancy">
+<div class="items" id="vacancy">
     <div class="container">
-        <h2 class="vacancy_title">Что вы получите</h2>
-        <div class="vacancy_text">
+        <h2 class="items__title">Что вы получите</h2>
+        <div class="items__text">
             <div class="row">
                 <div class="col-6 col-mx-12">
                     <div class="sec2-item">
@@ -115,7 +115,7 @@
                     </div>
                 </div>
                 <div class="col-12 padding-v-20_50">
-                    <a class="head__link" href="/">Узнать подробнее</a>
+                    <a class="head__link" href="/" data-toggle="modal" data-target="#modal-3">Узнать подробнее</a>
                     <br><br class="no-mob"><small>* в каждом отдельном случае результат будет отличаться</small>
                 </div>
             </div>
@@ -124,30 +124,30 @@
 </div>
 <div class="features second-land" id="features">
     <div class="container">
-        <div class="features_box">
-            <h2 class="features_title">Почему работа в Интернете так привлекательна</h2>
-            <div class="features_line">
-                <div class="features_subtitle">Свободный график</div>
-                <div class="features_description">Вы сами будете планировать свой рабочий день. Так как работа не займет
+        <div class="features__box">
+            <h2 class="features__title">Почему работа в Интернете так привлекательна</h2>
+            <div class="features__line">
+                <div class="features__subtitle">Свободный график</div>
+                <div class="features__description">Вы сами будете планировать свой рабочий день. Так как работа не займет
                     более 3 часов в день!
                 </div>
             </div>
-            <div class="features_line">
-                <div class="features_subtitle">Доступно с любого места</div>
-                <div class="features_description">Все что Вам необходимо для начала работы это стабильное интернет
+            <div class="features__line">
+                <div class="features__subtitle">Доступно с любого места</div>
+                <div class="features__description">Все что Вам необходимо для начала работы это стабильное интернет
                     соединение и желание заработать!
                 </div>
             </div>
-            <div class="features_line">
-                <div class="features_subtitle">Выплаты раз в неделю</div>
-                <div class="features_description">Еженедельные выплаты без комиссий, на вашу карту или интернет
+            <div class="features__line">
+                <div class="features__subtitle">Выплаты раз в неделю</div>
+                <div class="features__description">Еженедельные выплаты без комиссий, на вашу карту или интернет
                     кошельки.
                 </div>
             </div>
-            <div class="features_result">Начав сегодня Вы обеспечите себя доходом <br><span
+            <div class="features__result">Начав сегодня Вы обеспечите себя доходом <br><span
                     class="red">от 35 000 руб. </span> с первого месяца</div>
             <div class="col-12 padding-top-20">
-                <a class="head__link" href="/">Узнать подробнее</a>
+                <a class="head__link link__footer" href="/"  data-toggle="modal" data-target="#modal-2">Узнать подробнее</a>
             </div>
         </div>
 
@@ -176,6 +176,167 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <form id="form-2" class="form form-modal">
+            <h4 class="modal__header">Заполните форму и получите консультацию</h4>
+            <div class="form-input">
+
+                <input class="form-control form__input form__input--user-img" type="text" id="name-2" placeholder="Ваше имя" required>
+                <span class="msg-help-2 name-span-2" style="display:none;">Укажите имя, что бы мы знали как обращаться к Вам</span>
+
+
+                <input  class="form-control form__input form__input--email-img" type="email" id="mail-2" placeholder="Ваш Email" pattern="^[-._A-Za-z0-9]+@(?:[a-z0-9][-a-z0-9]+\.)+[a-z]{2,6}$" required>
+                <span class="msg-help-2 mail-span-2" style="display:none;">Укажите Ваш реальный Email</span>
+
+
+                <label for="phone-2" id="label-phone-2">
+                    <input  class="form-control form__input form__input--phone-img" type="tel" placeholder="Телефон" id="phone-2" maxlength="16" required>
+                    <span class="msg-help-2 tel-span-2" style="display:none;">Укажите номер в международном формате</span>
+                    <span id="valid-msg-2" class="hide">✓ Отлично</span>
+                    <span id="error-msg-2" class="hide"></span>
+                </label>
+
+              <input type="hidden" id="last_name-2" value=" ">
+              <input type="hidden" id="ip-2" value="<?= $_SERVER['REMOTE_ADDR']; ?>">
+              <input type="hidden" id="country-2" value="">
+              <input type="hidden" id="prefix-2" value="">
+              <input type="hidden" id="lang-2" value="RU">
+              <input type="hidden" id="utm_source-2" value="<?= $_GET['utm_source']; ?>">
+              <input type="hidden" id="utm_medium-2" value="<?=  $_GET['utm_medium']; ?>">
+              <input type="hidden" id="utm_campaign-2" value="<?= $_GET['utm_campaign']; ?>">
+              <input type="hidden" id="utm_term-2" value="<?= $_GET['utm_term'];?>">
+              <input type="hidden" id="utm_content-2" value="<?= $_GET['utm_content']; ?>">
+              <input type="hidden" id="description-2" value="">
+
+            </div>
+            <div class="form-button">
+              <button type="submit" id="button-2" class="sub btn_yellow form__button">
+                <span>Получить консультацию</span>
+              </button>
+              <p class="msg"></p>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="modal-2" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <form id="form-3" class="form form-modal">
+            <h4 class="modal__header">Заполните форму и получите консультацию</h4>
+            <div class="form-input">
+
+                <input class="form-control form__input form__input--user-img" type="text" id="name-3" placeholder="Ваше имя" required>
+                <span class="msg-help-3 name-span-3" style="display:none;">Укажите имя, что бы мы знали как обращаться к Вам</span>
+
+
+                <input  class="form-control form__input form__input--email-img" type="email" id="mail-3" placeholder="Ваш Email" pattern="^[-._A-Za-z0-9]+@(?:[a-z0-9][-a-z0-9]+\.)+[a-z]{2,6}$" required>
+                <span class="msg-help-3 mail-span-3" style="display:none;">Укажите Ваш реальный Email</span>
+
+
+                <label for="phone-3" id="label-phone-3">
+                    <input  class="form-control form__input form__input--phone-img" type="tel" placeholder="Телефон" id="phone-3" maxlength="16" required>
+                    <span class="msg-help-3 tel-span-3" style="display:none;">Укажите номер в международном формате</span>
+                    <span id="valid-msg-3" class="hide">✓ Отлично</span>
+                    <span id="error-msg-3" class="hide"></span>
+                </label>
+
+              <input type="hidden" id="last_name-3" value=" ">
+              <input type="hidden" id="ip-3" value="<?= $_SERVER['REMOTE_ADDR']; ?>">
+              <input type="hidden" id="country-3" value="">
+              <input type="hidden" id="prefix-3" value="">
+              <input type="hidden" id="lang-3" value="RU">
+              <input type="hidden" id="utm_source-3" value="<?= $_GET['utm_source']; ?>">
+              <input type="hidden" id="utm_medium-3" value="<?=  $_GET['utm_medium']; ?>">
+              <input type="hidden" id="utm_campaign-3" value="<?= $_GET['utm_campaign']; ?>">
+              <input type="hidden" id="utm_term-3" value="<?= $_GET['utm_term'];?>">
+              <input type="hidden" id="utm_content-3" value="<?= $_GET['utm_content']; ?>">
+              <input type="hidden" id="description-3" value="">
+
+            </div>
+            <div class="form-button">
+              <button type="submit" id="button-3" class="sub btn_yellow form__button">
+                <span>Получить консультацию</span>
+              </button>
+              <p class="msg"></p>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="modal-3" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <form id="form-1" class="form form-modal">
+            <h4 class="modal__header">Заполните форму и получите консультацию</h4>
+            <div class="form-input">
+
+                <input class="form-control form__input form__input--user-img" type="text" id="name-1" placeholder="Ваше имя" required>
+                <span class="msg-help-1 name-span-1" style="display:none;">Укажите имя, что бы мы знали как обращаться к Вам</span>
+
+
+                <input  class="form-control form__input form__input--email-img" type="email" id="mail-1" placeholder="Ваш Email" pattern="^[-._A-Za-z0-9]+@(?:[a-z0-9][-a-z0-9]+\.)+[a-z]{2,6}$" required>
+                <span class="msg-help-1 mail-span-1" style="display:none;">Укажите Ваш реальный Email</span>
+
+
+                <label for="phone-1" id="label-phone-1">
+                    <input  class="form-control form__input form__input--phone-img" type="tel" placeholder="Телефон" id="phone-1" maxlength="16" required>
+                    <span class="msg-help-1 tel-span-1" style="display:none;">Укажите номер в международном формате</span>
+                    <span id="valid-msg-1" class="hide">✓ Отлично</span>
+                    <span id="error-msg-1" class="hide"></span>
+                </label>
+
+              <input type="hidden" id="last_name-1" value=" ">
+              <input type="hidden" id="ip-1" value="<?= $_SERVER['REMOTE_ADDR']; ?>">
+              <input type="hidden" id="country-1" value="">
+              <input type="hidden" id="prefix-1" value="">
+              <input type="hidden" id="lang-1" value="RU">
+              <input type="hidden" id="utm_source-1" value="<?= $_GET['utm_source']; ?>">
+              <input type="hidden" id="utm_medium-1" value="<?=  $_GET['utm_medium']; ?>">
+              <input type="hidden" id="utm_campaign-1" value="<?= $_GET['utm_campaign']; ?>">
+              <input type="hidden" id="utm_term-1" value="<?= $_GET['utm_term'];?>">
+              <input type="hidden" id="utm_content-1" value="<?= $_GET['utm_content']; ?>">
+              <input type="hidden" id="description-1" value="">
+
+            </div>
+            <div class="form-button">
+              <button type="submit" id="button-1" class="sub btn_yellow form__button">
+                <span>Получить консультацию</span>
+              </button>
+              <p class="msg"></p>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
   
   
 

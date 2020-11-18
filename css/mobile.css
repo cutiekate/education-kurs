@@ -52,7 +52,7 @@
   .head__link {
     margin: 15px auto;
   }
-  .features_description {
+  .features__description {
     font-size: 16px;
     text-align: left;
   }
@@ -119,12 +119,16 @@
       height: 70px;
       position: static;
   }
-
-
-    
+  .form {
+    width: 366px;
+    height: 428px;
+  }
+  .form h4 {
+      font-size: 22px;
+      line-height: 25px;
+      padding-bottom: 6px;
+  }    
 }
-
-
 
 @media only screen and (min-width: 421px) and (max-width: 1023px) {
     .header {
@@ -353,37 +357,37 @@
     }
   }
   @media (max-width: 420px) {
-    .vacancy {
+    .items {
       background-color: #F5F7F9;
     }
   }
   
   @media only screen and (min-width: 421px) and (max-width: 1023px) {
-    .vacancy {
+    .items {
       background-color: #F5F7F9;
     }
   }
   
   @media (max-width: 420px) {
-    .vacancy .container {
+    .items .container {
       width: 100%;
     }
   }
   
   @media only screen and (min-width: 421px) and (max-width: 1023px) {
-    .vacancy .container {
+    .items .container {
       width: 100%;
     }
   }
   
   @media only screen and (min-width: 1024px) and (max-width: 1365px) {
-    .vacancy .container {
+    .items .container {
       width: 100%;
     }
   }
 
   @media (max-width: 420px) {
-    .vacancy_text {
+    .items__text {
       width: 90%;
       font-size: 18px;
       padding: 10px;
@@ -398,7 +402,7 @@
   }
   
   @media only screen and (min-width: 421px) and (max-width: 767px) {
-    .vacancy_text {
+    .items__text {
       font-size: 18px;
       padding: 20px;
       line-height: 1.5;
@@ -406,7 +410,7 @@
   }
   
   @media only screen and (min-width: 421px) and (max-width: 1023px) {
-    .vacancy_text {
+    .items__text {
       width: 90%;
       margin: auto;
       background-color: var(--text-white);
@@ -418,25 +422,25 @@
   }
   
   @media (max-width: 420px) {
-    .vacancy_point {
+    .items__point {
       margin-top: 20px;
     }
   }
   
   @media only screen and (min-width: 421px) and (max-width: 1023px) {
-    .vacancy_point {
+    .items__point {
       margin-top: 20px;
     }
   }
   
   @media only screen and (min-width: 421px) and (max-width: 767px) {
-    .vacancy p {
+    .items p {
       padding-top: 15px;
     }
   }
 
   @media (max-width: 420px) {
-    .vacancy_title {
+    .items__title {
       padding-top: 25px;
       color: black;
       font-size: 20px;
@@ -448,7 +452,7 @@
   }
   
   @media only screen and (min-width: 421px) and (max-width: 1023px) {
-    .vacancy_title {
+    .items__title {
       padding-top: 25px;
       color: black;
       font-weight: normal;
@@ -459,21 +463,21 @@
   }
 
   @media (max-width: 420px) {
-    .vacancy_list {
+    .items__list {
       text-align: center;
     }
   }
   
   @media only screen and (min-width: 421px) and (max-width: 1023px) {
-    .vacancy_list {
+    .items__list {
       text-align: center;
     }
   }
   @media screen and (min-width: 768px) {
-    .vacancy_item {
+    .items__item {
       padding-left: 40px;
     }
-    .vacancy_feature {
+    .items__feature {
       display: flex;
       justify-content: space-between;
       padding: 0 100px;
@@ -488,7 +492,7 @@
     }
   }
   @media (max-width: 420px) {
-    .vacancy_feature {
+    .items__feature {
       flex-wrap: wrap;
       padding: 50px 0 0 0;
     }
@@ -501,7 +505,7 @@
     button.form_submit{
       text-align: center;
     }
-    .vacancy_featurebox{
+    .items__featurebox{
       display: inline-block;
       text-align: center;
       width: 50%;
@@ -509,7 +513,7 @@
   }
   
   @media only screen and (min-width: 421px) and (max-width: 1023px) {
-    .vacancy_feature {
+    .items__feature {
       flex-wrap: wrap;
       padding-bottom: 50px;
       align-items: center;
@@ -517,13 +521,13 @@
   }
   
   @media only screen and (min-width: 1024px) and (max-width: 1365px) {
-    .vacancy_feature {
+    .items__feature {
       flex-direction: row;
       flex-wrap: wrap;
     }
   }
   @media (max-width: 420px) {
-    .vacancy_featurebox {
+    .items__featurebox {
       background-color: transparent;
       width: 50%;
       text-align: center;
@@ -531,7 +535,7 @@
   }
   
   @media only screen and (min-width: 421px) and (max-width: 1023px) {
-    .vacancy_featurebox {
+    .items__featurebox {
       background-color: transparent;
       width: 250px;
       text-align: center;
@@ -539,7 +543,7 @@
     }
   }  
   @media (max-width: 420px) {
-    .vacancy_icon {
+    .items__icon {
       width: 80px;
       height: 87px;
       padding: 0;
@@ -547,14 +551,14 @@
   }
   
   @media only screen and (min-width: 421px) and (max-width: 1023px) {
-    .vacancy_icon {
+    .items__icon {
       width: 80px;
       height: 87px;
       padding: 0;
     }
   }
   @media (max-width: 420px) {
-    .vacancy_description {
+    .items__description {
       color: var(--dark-grey-bg-color);
       font-size: 16px;
       margin: 0;
@@ -564,7 +568,7 @@
   }
   
   @media only screen and (min-width: 421px) and (max-width: 1023px) {
-    .vacancy_description {
+    .items__description {
       color: var(--dark-grey-bg-color);
       font-size: 16px;
       margin: 0;
@@ -622,7 +626,7 @@
     .no-mob{
         display: none;
     }
-  .features_box {
+  .features__box {
     padding: 0;
     height: auto;
     background: transparent;
@@ -634,7 +638,7 @@
 }
 
 @media only screen and (min-width: 421px) and (max-width: 1023px) {
-  .features_box {
+  .features__box {
     padding: 0;
     height: auto;
     background: transparent;
@@ -646,7 +650,7 @@
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1365px) {
-  .features_box {
+  .features__box {
     width: 90%;
     margin: 0 auto;
   }
@@ -659,14 +663,14 @@
     .header__text{
         justify-content: center;
     }
-  .features_title {
+  .features__title {
     font-size: 24px;
     padding-top: 80px;
   }
-    #features.second-land .features_title{
+    #features.second-land .features__title{
         padding-top: 0;
     }
-    #features.second-land .features_description{
+    #features.second-land .features__description{
         text-transform: unset;
     }
     .padding-v-20_50 {
@@ -677,18 +681,18 @@
     }
 }
 @media (max-width: 420px) {
-    .features_line {
+    .features__line {
       align-items: center;
     }
   }
   
   @media only screen and (min-width: 421px) and (max-width: 1023px) {
-    .features_line {
+    .features__line {
       align-items: center;
     }
   }
   @media (max-width: 420px) {
-    .features_subtitle {
+    .features__subtitle {
       font-size: 18px;
       text-transform: uppercase;
       font-weight: bold;
@@ -696,33 +700,33 @@
   }
   
   @media only screen and (min-width: 421px) and (max-width: 1023px) {
-    .features_subtitle {
+    .features__subtitle {
       font-size: 18px;
       text-transform: uppercase;
       font-weight: bold;
     }
   }
   @media (max-width: 420px) {
-    .features_description {
+    .features__description {
       font-size: 18px;
       text-transform: uppercase;
     }
   }
   
   @media only screen and (min-width: 421px) and (max-width: 1023px) {
-    .features_description {
+    .features__description {
       font-size: 18px;
       text-transform: uppercase;
     }
   }
   @media (max-width: 420px) {
-    .features_result {
+    .features__result {
       display: none;
     }
   }
   
   @media only screen and (min-width: 421px) and (max-width: 1023px) {
-    .features_result {
+    .features__result {
       display: none;
     }
   }  
@@ -730,8 +734,16 @@
   @media screen and (max-width: 375px) {
     .head__title {
       font-size: 16px;
-  }
-  
+    }
+    .form {
+      width: 324px;
+      height: 360px;
+    }
+    .form__input,
+    .form__button {
+        width: 330px;
+        height: 60px;
+    }
   }
   
   @media screen and (max-width: 320px) {
@@ -743,7 +755,7 @@
     font-size: 14px;
    }
 
-   .vacancy_title {
+   .items__title {
     font-size: 16px;
   }
   .sec2-item {
@@ -753,24 +765,35 @@
     font-size: 14px;
   }
 
-  .vacancy_text {
+  .items__text {
     width: 100%;
   }
   #features.second-land {
     padding: 30px 0;
   }
-  .features_title {
+  .features__title {
     font-size: 16px;
   }
 
-  .features_line {
+  .features__line {
     margin-top: 25px;
 }
-  .features_subtitle {
+  .features__subtitle {
     font-size: 14px;
   }
 
-  .features_description {
+  .features__description {
     font-size: 14px;
+}
+.form {
+  width: 270px;
+  height: 360px;
+}
+.form__input, .form__button {
+  width: 280px;
+  height: 60px;
+}
+.link__footer {
+  margin-left: -10px;
 }
 }
